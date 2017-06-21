@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background: #82D7EC;
+  color: white;
+  font-family: 'Verdana';
+  font-weight: bolder;
+  font-size: 45px;
+  animation-name: bg;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background: #2B3066;
+  opacity: 1;
+}
+
+div.hidden {
+  display: none;
+}
+
+div.main {
+  margin-top: 75px;
+  width: 60%;
+  height: auto;
+  animation-name: form;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+div.filler {
+  display: inline;
+  width: 20%;
+  margin: 0px 8% 0px 8%;
+}
+
+div#nav {
+  width: 60%;
+}
+
+div#results {
+  opacity: 0;
+}
+
+div#error {
+  margin-top: 75px;
+  width: 500px;
+  height: 250px;
+}
+
+div#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+}
+
+div#footer p {
+  font-size: 8px;
+}
+
+input[type=submit], input[type=button], button {
+  padding: 16px 35px;
+  background: #23A4CD;
+  font-size: 35px;
+  color: white; 
+  border: none;
+  border-radius: 5px;
+}
+input[type=text] {
+  padding: 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+  background: #82D7EC;  
+}
+
+button.active {
+  border: 1px solid white;
+}
+
+@keyframes bg {
+  from {background: #82D7EC}
+  to {background: #23A4CD}
+}
+@keyframes form {
+  from {width: 60%; height: 0; opacity: 0;}
+  to {width: 60%; height: auto; opacity: 1;}
+}
